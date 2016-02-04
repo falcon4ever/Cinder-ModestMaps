@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="ModestMaps"
+	id="org.libcinder.modest_maps"
+	author="unknown"
+	summary="foo"
+	core="true"
+	>
+	<supports os="ios" />
+	<source>src/Map.cpp</source>
+	<source>src/TileLoader.cpp</source>
+	<headerPattern>include/*.h</headerPattern>
+	<includePath>include</includePath>
+</block>
+</cinder>

@@ -37,7 +37,7 @@ void TileLoader::doThreadedPaint( const Coordinate &coord )
     
 	pendingCompleteMutex.lock();
     if (pending.count(coord) > 0) {
-        if (image) {
+        if (image.getWidth() > 0) {
             completed[coord] = image;
         }
         pending.erase(coord);  
@@ -56,7 +56,8 @@ void TileLoader::processQueue(std::vector<Coordinate> &queue )
         pendingCompleteMutex.unlock();	
         
         // TODO: consider using a single thread and a queue, rather than a thread per load?
-        std::thread loaderThread( &TileLoader::doThreadedPaint, this, key );        
+        std::thread loaderThread( &TileLoader::doThreadedPaint, this, key );
+        loaderThread.detach();
 	}
 }
 
@@ -66,7 +67,7 @@ void TileLoader::transferTextures(std::map<Coordinate, gl::TextureRef> &images)
     if (pendingCompleteMutex.try_lock()) {
         if (!completed.empty()) {
             std::map<Coordinate, Surface>::iterator iter = completed.begin();
-            if (iter->second) {
+            if (iter->second.getWidth() > 0) {
                 images[iter->first] = gl::Texture::create(iter->second);		
             }
             completed.erase(iter);

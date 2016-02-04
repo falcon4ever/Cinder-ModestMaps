@@ -10,7 +10,7 @@
 #include "QueueSorter.h"
 #include "TileLoader.h"
 
-#include "cinder/app/AppBasic.h"
+#include "cinder/app/App.h"
 #include "cinder/ImageIo.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/Vector.h"

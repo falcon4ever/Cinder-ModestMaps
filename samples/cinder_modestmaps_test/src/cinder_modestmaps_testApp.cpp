@@ -1,5 +1,8 @@
-#include "cinder/app/AppNative.h"
+//#include "cinder/app/AppNative.h"
+#include "cinder/app/cocoa/AppCocoaTouch.h"
 #include "cinder/app/RendererGl.h"
+#include "cinder/gl/wrapper.h"
+#include "cinder/gl/draw.h"
 #include "Map.h"
 //#include "TemplatedMapProvider.h"
 #include "BingMapsProvider.h"
@@ -12,7 +15,7 @@ using namespace ci::app;
 using namespace ci::modestmaps;
 using namespace std;
 
-class cinder_modestmaps_testApp : public AppNative {
+class cinder_modestmaps_testApp : public App {
  public:
 
 	void prepareSettings(Settings *settings);
@@ -37,7 +40,7 @@ class cinder_modestmaps_testApp : public AppNative {
 };
 
 void cinder_modestmaps_testApp::prepareSettings(Settings *settings) {
-	settings->enableMultiTouch(true);
+//	settings- enableMultiTouch(true);
 	settings->setTitle("Modest Maps Cinder - Test App");
 }
 
@@ -224,4 +227,4 @@ void cinder_modestmaps_testApp::touchesEnded( TouchEvent event )
 
 
 // This line tells Cinder to actually create the application
-CINDER_APP_NATIVE(cinder_modestmaps_testApp, RendererGl)
+CINDER_APP(cinder_modestmaps_testApp, RendererGl)

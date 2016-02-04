@@ -1,6 +1,9 @@
 
 #include "Map.h"
 
+#include "cinder/gl/wrapper.h"
+#include "cinder/gl/draw.h"
+
 namespace cinder { namespace modestmaps {         
     
 void Map::setup( MapProviderRef _mapProvider, vec2 _size )

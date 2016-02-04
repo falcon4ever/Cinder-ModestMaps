@@ -18,6 +18,11 @@
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
+		5D1B873E1C57F16B0029F183 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1B873D1C57F16B0029F183 /* libc++.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		5D66061B1C63988D00EA6B3C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66061A1C63988D00EA6B3C /* AVFoundation.framework */; };
+		5D66061D1C6398A700EA6B3C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66061C1C6398A700EA6B3C /* CoreMedia.framework */; };
+		5D6606201C6398DB00EA6B3C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66061E1C6398DB00EA6B3C /* IOKit.framework */; };
+		5D6606211C6398DB00EA6B3C /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66061F1C6398DB00EA6B3C /* IOSurface.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E297D62F12FA307F008FD780 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E297D4F312FA307F008FD780 /* Map.cpp */; };
 		E297D63012FA307F008FD780 /* TileLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E297D4F412FA307F008FD780 /* TileLoader.cpp */; };
@@ -40,6 +45,12 @@
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		5D1B873C1C57F0E40029F183 /* cinder_modestmaps_test_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cinder_modestmaps_test_Prefix.pch; sourceTree = "<group>"; };
+		5D1B873D1C57F16B0029F183 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5D66061A1C63988D00EA6B3C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5D66061C1C6398A700EA6B3C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5D66061E1C6398DB00EA6B3C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		5D66061F1C6398DB00EA6B3C /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* cinder_modestmaps_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cinder_modestmaps_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27D4AB11301276200E6B4EA /* Transitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transitioner.h; sourceTree = "<group>"; };
@@ -65,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6606201C6398DB00EA6B3C /* IOKit.framework in Frameworks */,
+				5D6606211C6398DB00EA6B3C /* IOSurface.framework in Frameworks */,
+				5D66061D1C6398A700EA6B3C /* CoreMedia.framework in Frameworks */,
+				5D66061B1C63988D00EA6B3C /* AVFoundation.framework in Frameworks */,
+				5D1B873E1C57F16B0029F183 /* libc++.tbd in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
 				53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */,
@@ -127,6 +143,7 @@
 		29B97314FDCFA39411CA2CEA /* cinder_modestmaps_test */ = {
 			isa = PBXGroup;
 			children = (
+				5D1B873C1C57F0E40029F183 /* cinder_modestmaps_test_Prefix.pch */,
 				E297D2EB12FA305A008FD780 /* Blocks */,
 				29B97315FDCFA39411CA2CEA /* Headers */,
 				080E96DDFE201D6D7F000001 /* Source */,
@@ -157,6 +174,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D66061E1C6398DB00EA6B3C /* IOKit.framework */,
+				5D66061F1C6398DB00EA6B3C /* IOSurface.framework */,
+				5D66061C1C6398A700EA6B3C /* CoreMedia.framework */,
+				5D66061A1C63988D00EA6B3C /* AVFoundation.framework */,
+				5D1B873D1C57F16B0029F183 /* libc++.tbd */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -237,6 +259,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "cinder_modestmaps_test" */;
 			compatibilityVersion = "Xcode 3.0";
 			developmentRegion = English;
@@ -284,6 +308,7 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -304,6 +329,7 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_FAST_MATH = YES;
@@ -326,15 +352,20 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = i386;
-				CINDER_PATH = ../../../../Cinder/Cinder;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CINDER_PATH = ../../../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-lc++",
+				);
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
 			};
 			name = Debug;
@@ -342,15 +373,20 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = i386;
-				CINDER_PATH = ../../../../Cinder/Cinder;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CINDER_PATH = ../../../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-lc++",
+				);
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
 			};
 			name = Release;
