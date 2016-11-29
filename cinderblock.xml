@@ -7,9 +7,7 @@
 	summary="foo"
 	core="true"
 	>
-	<supports os="ios" />
-	<source>src/Map.cpp</source>
-	<source>src/TileLoader.cpp</source>
+	<sourcePattern>src/*.cpp</sourcePattern>	
 	<headerPattern>include/*.h</headerPattern>
 	<includePath>include</includePath>
 </block>
